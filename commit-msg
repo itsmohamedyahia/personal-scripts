@@ -1,0 +1,8 @@
+#!/bin/bash
+
+comment= `cat $1`
+
+if [ -n "$comment" ]
+then
+    echo "play: $comment" > $1
+fi
