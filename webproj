@@ -1,0 +1,9 @@
+#!/bin/bash
+
+dir_name=$1
+
+install -D /dev/null $dir_name/index.html
+install -D /dev/null $dir_name/assets/css/main.css
+touch $dir_name/assets/css/style.css
+touch $dir_name/assets/css/queries.css
+install -D /dev/null $dir_name/assets/js/main.js
