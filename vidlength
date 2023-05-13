@@ -1,0 +1,4 @@
+#!/bin/bash
+
+find . -name "*.mp4" -printf "\"%p\" " | xargs exiftool -n -q -p '${Duration;our $sum;$_=ConvertDuration($sum+=$_)}' | tail -n 1
+

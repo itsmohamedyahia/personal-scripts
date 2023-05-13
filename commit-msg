@@ -4,5 +4,5 @@ comment= `cat $1`
 
 if [ -n "$comment" ]
 then
-    echo "play: $comment" > $1
+    echo "uxui: $comment" > $1
 fi
